@@ -42,6 +42,9 @@ EndIf
 EndFunc
 
 Func klik($oIE,$hand)
+      WinSetState("Poker | STS - Google Chrome","", @SW_ENABLE)
+   WinSetState("Poker | STS - Google Chrome","", @SW_MAXIMIZE)
+   WinSetState("Poker | STS - Google Chrome","", @SW_SHOW)
 ConsoleWrite("klik" & @CRLF)
 If $hand == 1 Then
 MouseClick("left",1493, 924,1,0)
